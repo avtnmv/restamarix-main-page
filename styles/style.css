@@ -228,7 +228,4 @@ form {
  .login-input-group-forgot-password input{
   width: 320px;
  }
- body{
-  overflow-y: hidden;
- }
 }
