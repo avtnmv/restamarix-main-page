@@ -1,0 +1,231 @@
+@font-face {
+ font-family: 'Avenir';
+ src: url('./fonts/Avenir-Heavy.woff2') format('woff2');
+ font-weight: 900;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'Inter';
+ src: url('./fonts/Inter-Light.woff2') format('woff2');
+ font-weight: 300;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'Avenir';
+ src: url('./fonts/Inter-SemiBold.woff2') format('woff2');
+ font-weight: 600;
+ font-style: normal;
+ font-display: swap;
+}
+
+.modal-fullscreen-container {
+ height: 100vh;
+ width: 100vw;
+ background-image: url("../images/bg-image.webp");
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.login-title {
+ margin: 0 0 2ex 0;
+ color: white;
+ font-weight: normal;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 1px solid whitesmoke;
+}
+
+.login-container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ color: white;
+ gap: 20px;
+}
+
+.login-input-group label {
+ width: 2.5em;
+ display: flex;
+ align-items: center;
+ font-size: 130%;
+ justify-content: center;
+ border-radius: .25rem;
+ background-color: hsl(200, 100%, 20%, .6);
+}
+
+.login-btn {
+ font-size: 1.25rem;
+ color: white;
+ background-color: #4B00DD;
+ border: none;
+ border-radius: 8px;
+ outline: none;
+ height: 48px;
+ transition: .3s ease-in-out;
+}
+.login-btn:hover {
+ background-color: #6F33E4;
+}
+
+.login-input-group {
+ position: relative;
+ display: flex;
+ align-items: center;
+ width: fit-content;
+}
+
+.login-input-group input {
+ width: 424px;
+ height: 56px;
+ padding-left: 3em;
+ border: 1px solid rgb(214, 214, 214);
+ border-radius: 4px;
+ outline: none;
+ font-size: 16px;
+ font-family: 'Inter', sans-serif;
+ font-weight: 300;
+}
+
+.input-icon {
+ position: absolute;
+ left: 10px;
+ top: 50%;
+ transform: translateY(-50%);
+ pointer-events: none;
+ width: 32px;
+ height: 32px;
+}
+
+.login-input-group {
+ position: relative;
+ display: flex;
+ align-items: center;
+}
+
+
+.input-icon-left,
+.input-icon-right {
+ position: absolute;
+ width: 32px;
+ height: 32px;
+ cursor: pointer;
+}
+
+.input-icon-left {
+ left: 10px;
+}
+
+.input-icon-right {
+ right: 10px;
+}
+.login-page-header{
+  color: #4B00DD;
+ font-size: 54px;
+ line-height: 22px;
+ font-family: 'Avenir', sans-serif;
+
+}
+
+.login-options {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ color: #7A7A7A;
+ font-size: 16px;
+ font-family: 'Inter', sans-serif;
+ font-weight: 300;
+}
+
+.remember-me {
+ display: flex;
+ align-items: center;
+ gap: 8px;
+}
+
+.remember-me input {
+ width: 24px;
+ height: 24px;
+ accent-color: #4B00DD;
+}
+
+.forgot-password-link {
+ color: #7A7A7A;
+ text-decoration: none;
+ font-size: 16px;
+ font-family: 'Inter', sans-serif;
+ font-weight: 300;
+
+}
+
+/*Forgot password styles*/
+.modal-fullscreen-container-forgot-password{
+ height: 100vh;
+ width: 100vw;
+ background-image: url("../images/forgot-password-bg.webp");
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.back-to-login {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ margin: 15px 0;
+ font-size: 16px;
+ color: #7A7A7A;
+}
+
+.back-to-login-link {
+ text-decoration: none;
+ color: #7A7A7A;
+ font-size: 16px;
+ transition: color 0.3s;
+ font-family: 'Inter', sans-serif;
+ font-weight: 300;
+}
+
+.login-input-group-forgot-password input{
+ width: 424px;
+ height: 56px;
+ padding-left: 1em;
+ border: 1px solid rgb(214, 214, 214);
+ border-radius: 4px;
+ outline: none;
+ font-size: 16px;
+ font-family: 'Inter', sans-serif;
+ font-weight: 300;
+}
+
+@media screen and (max-width: 500px) {
+ .login-container {
+  width: 320px;
+ }
+ .login-page-header{
+  font-size: 36px;
+ }
+ .login-input-group{
+  width: 320px;
+ }
+ .login-input-group-forgot-password input{
+  width: 320px;
+ }
+}
